@@ -1,34 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
+  <link rel="preload" as="font" href="./assets/fonts/Inter-VariableFont_slnt,wght.ttf" type="font/ttf" crossorigin>
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="main.css">
+
   <title>Frontend Mentor | Social links profile</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
-
-  Jessica Randall
-  London, United Kingdom
-  "Front-end developer and avid reader."
-
-  GitHub
-  Frontend Mentor
-  LinkedIn
-  Twitter
-  Instagram
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <main>
+    <article class="card">
+      <img class="card__profile-pic" src="assets/images/avatar.jpg" alt="Profile picture" />
+      <section class="card__name-location">
+        <h3 class="font-preset-1">Surasek Nusati</h3>
+        <p class="card__location font-preset-2 font-preset-2--bold">Bangkok, Thailand</p>
+      </section>
+      <p class="card__bio font-preset-2">
+        "Software engineer, still learning."
+      </p>
+      <ul class="card__links">
+        <li>
+          <a class="font-preset-2 font-preset-2--bold" href="https://github.com/nuzaty" target="_blank"
+            rel="noopener noreferrer">
+            GitHub
+          </a>
+        </li>
+        <li><a class="font-preset-2 font-preset-2--bold" href="https://www.frontendmentor.io/profile/nuzaty"
+            target="_blank" rel="noopener noreferrer">
+            Frontend Mentor</a>
+        </li>
+        <li><a class="font-preset-2 font-preset-2--bold" href="https://www.linkedin.com/in/surasek-nusati/"
+            target="_blank" rel="noopener noreferrer">
+            LinkedIn
+          </a>
+        </li>
+        <li>
+          <a class="font-preset-2 font-preset-2--bold" href="https://x.com/suraseknu" target="_blank"
+            rel="noopener noreferrer">
+            Twitter
+          </a>
+        </li>
+        <li>
+          <a class="font-preset-2 font-preset-2--bold" href="https://www.instagram.com/surasek.nu/" target="_blank"
+            rel="noopener noreferrer">
+            Instagram
+          </a>
+        </li>
+      </ul>
+    </article>
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/nuzaty">nuzaty</a>.
+  </footer>
 </body>
+
 </html>

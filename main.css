@@ -1,0 +1,147 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/Inter-VariableFont_slnt,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --color-gray-900: #141414;
+  --color-gray-800: #1f1f1f;
+  --color-gray-700: #333333;
+  --color-green: #c4f82a;
+  --color-white: #ffffff;
+  /*Custom color*/
+  --color-aqua: #5ac8fa;
+
+  /*assume 1rem = 16px*/
+  --font-inter: 'Inter', sans-serif;
+  --fs-1: 1.5rem;
+  --fs-2: 0.875rem;
+  --lh-1: 1.5;
+  --lh-2: 1.5;
+  --fw-regular: 400;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+
+  --space-500: 2.5rem;
+  --space-300: 1.5rem;
+  --space-200: 1rem;
+  --space-150: 0.75rem;
+  --space-100: 0.5rem;
+  --space-50: 0.25rem;
+}
+
+.font-preset-1 {
+  font-size: var(--fs-1);
+  line-height: var(--lh-1);
+  font-weight: var(--fw-semi-bold);
+}
+
+.font-preset-2 {
+  font-size: var(--fs-2);
+  line-height: var(--lh-2);
+  font-weight: var(--fw-regular);
+}
+
+.font-preset-2--bold {
+  font-weight: var(--fw-bold);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--color-gray-900);
+  font-family: var(--font-inter);
+  color: var(--color-white);
+}
+
+body,
+p,
+h3 {
+  margin: 0;
+}
+
+main {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--space-500);
+  gap: var(--space-300);
+  width: 24rem;
+  background: var(--color-gray-800);
+  border: 1px solid var(--color-gray-950);
+  border-radius: 12px;
+  text-align: center;
+}
+
+/* mobile only */
+@media (max-width: 767px) {
+  .card {
+    padding: var(--space-300);
+    width: 20.4375rem;
+  }
+}
+
+.card__profile-pic {
+  width: 5.5rem;
+  border-radius: 100%;
+}
+
+.card__name-location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-50);
+}
+
+.card__location {
+  color: var(--color-aqua);
+}
+
+.card__links {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: var(--space-200);
+}
+
+.card__links a {
+  display: block;
+  text-decoration: none;
+  color: var(--color-white);
+  background: var(--color-gray-700);
+  padding: var(--space-150);
+  border-radius: 8px;
+}
+
+.card__links a:hover {
+  color: var(--color-gray-900);
+  background-color: var(--color-aqua);
+}
+.attribution {
+  /* Footer hack to avoid affecting vertical centering */
+  margin-top: -2rem;
+  font-size: 0.6875rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--color-aqua);
+}
